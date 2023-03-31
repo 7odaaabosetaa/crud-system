@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: #222;
+    color: #fff;
+}
+.crud{
+    margin: 0 auto;
+    max-width: 90%;
+}
+.head{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    background-color: #111;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+input:focus{
+    outline: none;
+    transform: scale(1.1);
+}
+.inputs div{
+    display: flex;
+
+}
+.inputs div input{
+    width: 19%;
+}
+#total{
+    background-color: red;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    width: 19%;
+
+}
+#total::before{
+    content: "total:";
+}
+ button{
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: #470053;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition:  0.3s;
+    outline: none;
+}
+ button:hover{
+    background-color: #5f026f;
+    letter-spacing: 1px;
+}
+/* search btns */
+.searchbtn div{
+    display: flex;
+    justify-content: space-between;
+}
+.searchbtn input{
+    min-width: 100%;
+}
+.searchbtn button{
+    max-width: 45%;
+    display: inline-block;
+}
+table{
+    min-width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+html{
+    scroll-behavior: smooth;
+}
